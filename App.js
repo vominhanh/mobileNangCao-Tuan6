@@ -1,12 +1,14 @@
-import Bai4 from './Bai4';
-// import Bai4 from './bai6';
+// import Bai4 from './Bai4';
+// import Bai5 from './Bai5';
+ import Bai6 from './Bai6';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Bai4/>
+      {/* <Bai4/> */}
       {/* <Bai5/> */}
+      <Bai6/>
     </View>
   );
 }

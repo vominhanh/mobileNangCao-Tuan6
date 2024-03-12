@@ -162,11 +162,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   shipper: {
-    width: 100,
-    height: 100,
+    width: 500,
+    height:500,
     resizeMode: 'contain',
     position: 'absolute',
-    top: 200, // Vị trí ban đầu của shipper
+    top: 200, 
   },
   text: {
     fontSize: 20,
@@ -178,8 +178,8 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   foodImage: {
-    width: 50,
-    height: 50,
+    width: 100,
+    height: 100,
     resizeMode: 'contain',
     marginHorizontal: 10,
   },

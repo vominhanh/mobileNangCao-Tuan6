@@ -25,8 +25,8 @@ const Bai4 = () => {
           useNativeDriver: true,
         }),
       ]).start(() => {
-        
-        balloon.top.setValue(700);
+       
+        balloon.top.setValue(500);
         balloon.opacity.setValue(1);
         animateBalloons(); 
       });
@@ -37,7 +37,7 @@ const Bai4 = () => {
     const numberOfBalloons = 5; 
 
     for (let i = 0; i < numberOfBalloons; i++) {
-      const top = new Animated.Value(700); 
+      const top = new Animated.Value(500); 
       const opacity = new Animated.Value(1); 
 
       balloons.current.push({ top, opacity });
@@ -48,6 +48,7 @@ const Bai4 = () => {
 
   return (
     <View style={styles.container}>
+      {balloons.current.map((balloon, index) => (
         <Animated.View
           key={index}
           style={[
@@ -58,6 +59,7 @@ const Bai4 = () => {
             },
           ]}
         />
+      ))}
     </View>
   );
 };
